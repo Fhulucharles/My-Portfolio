@@ -1,10 +1,23 @@
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import About from './components/About'
+import Skills from './components/Skills'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 function App() {
  return (
- <main className="min-h-screen flex items-center justify-center">
- <h1 className="text-4xl font-bold">
- My Developer Portfolio
- </h1>
+ <>
+ <Navbar />
+ <main>
+ <Hero />
+ <About />
+ <Skills />
+ <Projects />
+ <Contact />
  </main>
+ <Footer />
+ </>
  )
 }
 export default App

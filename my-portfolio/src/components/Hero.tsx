@@ -6,7 +6,7 @@ function Hero() {
  >
  <div>
  <p className="mb-3 text-sm font-semibold uppercase tracking-widest">
- Hello, I'm
+ Hee Ndaa!, I'm
  </p>
  <h1 className="text-5xl font-bold tracking-tight sm:text-6xl">
  Fhulufhedzani Nndwamato
