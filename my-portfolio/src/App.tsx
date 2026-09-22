@@ -1,23 +1,31 @@
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import About from './components/About'
-import Skills from './components/Skills'
-import Projects from './components/Projects'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+import Navbar from './components/Navbar.tsx'
+import Hero from './components/Hero.tsx'
+import About from './components/About.tsx'
+import Skills from './components/Skills.tsx'
+import Projects from './components/Projects.tsx'
+import Contact from './components/Contact.tsx'
+import Footer from './components/Footer.tsx'
+import { useEffect, useState } from 'react'
+
 function App() {
+ const [darkMode, setDarkMode] = useState(false)
+
+ useEffect(() => {
+  document.documentElement.classList.toggle('dark', darkMode)
+ }, [darkMode])
+
  return (
- <>
- <Navbar />
- <main>
- <Hero />
- <About />
- <Skills />
- <Projects />
- <Contact />
- </main>
- <Footer />
- </>
+ <div className="min-h-screen bg-[#eef9ff] text-[#12304a] transition-colors duration-300 dark:bg-[#0d1c2b] dark:text-[#e5f5ff]">
+  <Navbar darkMode={darkMode} onToggleTheme={() => setDarkMode((current) => !current)} />
+  <main>
+   <Hero />
+   <About />
+   <Skills />
+   <Projects />
+   <Contact />
+  </main>
+  <Footer />
+ </div>
  )
 }
 export default App
