@@ -22,7 +22,7 @@ function Contact() {
  GitHub
  </a>
  <a
- href="https://www.linkedin.com/in/fhulufhedzani-charles-nndwamato-056a3813a/"
+ href="https://www.linkedin.com/in/fhulufhedzani-charles-nndwamato"
  target="_blank"
  rel="noreferrer"
  className="rounded-lg border px-5 py-3"
